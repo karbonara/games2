@@ -25,4 +25,10 @@ export default {
   color: #8f8f8f;
   text-shadow: 0 0 4px rgb(0 0 0 / 44%);
 }
+@media (max-width: 455px) {
+  .breadcrumbs__link {
+    padding: 0;
+    padding-right: 10px;
+  }
+}
 </style>

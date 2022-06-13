@@ -19,9 +19,9 @@ const router = createRouter({
             component: () => import('@/pages/Goods')
         },
         {
-            path: '/game-page',
-            name: '/game-page',
-            component: () => import('@/pages/GamePage')
+            path: '/goods-page',
+            name: '/goods-page',
+            component: () => import('@/pages/GoodsPage')
         },
         {
             path: '/agreement',

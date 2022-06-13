@@ -29,10 +29,10 @@
 
 <script>
 import Slider from "@/components/slider/Slider";
-import Selection from "@/components/index/sort/Selection";
-import Product from "@/components/index/products/Product";
-import Recomendation from "@/components/index/sort/Recomendation";
-import Popular from "@/components/index/sort/Popular";
+import Selection from "@/components/index/sort/selection/Selection";
+import Product from "@/components/index/products/product/Product";
+import Recomendation from "@/components/index/sort/recomendation/Recomendation";
+import Popular from "@/components/index/sort/popular/Popular";
 
 export default {
   components: {
@@ -46,7 +46,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .container {
-  width: 1080px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 1380px;
   margin: 0 auto;
 }
 .container__wrapper {
@@ -58,6 +60,11 @@ export default {
   width: 73%;
   margin: 0 auto;
 }
+@media (max-width: 1522px) {
+  .container {
+    width: 1080px;
+  }
+}
 @media (max-width: 1122px) {
   .container {
     width: 800px;
@@ -68,7 +75,7 @@ export default {
 }
 @media (max-width: 980px) {
   .container {
-    width: 100%;
+    width: 90%;
   }
 }
 @media (max-width: 585px) {
@@ -77,8 +84,12 @@ export default {
   }
 }
 @media (max-width: 455px) {
+  .container {
+    width: 83%;
+    padding: 0;
+  }
   .container_right {
-    width: 95%;
+    width: 100%;
   }
 }
 </style>

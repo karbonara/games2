@@ -4,7 +4,6 @@
       <Breadcrumbs />
     </div>
     <div class="games__wrapper">
-      <MenuFilter />
       <FilterCheckBox />
       <div class="games__right">
         <div class="catalog__main-title">
@@ -22,7 +21,7 @@
 <script>
 import FilterCheckBox from "@/components/goods/filterCheckBox/FilterCheckBox";
 import FilterIntup from "@/components/goods/filterInput/FilterInput";
-import Product from "@/components/index/products/Product";
+import Product from "@/components/index/products/product/Product";
 import Breadcrumbs from "@/components/breadcrumbs/Breadcrumbs";
 import Pagination from "@/components/index/pagination/Pagination";
 
@@ -38,18 +37,21 @@ export default {
 </script>
 <style lang="scss" scoped>
 .games__breadcrumbs {
-  width: 1080px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 1380px;
   margin: 0 auto;
 }
 .games__wrapper {
-  width: 1080px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 1380px;
   margin: 0 auto;
-  padding: 26px 0;
   display: flex;
   justify-content: space-between;
 }
 .games__right {
-  width: 760px;
+  width: 1020px;
 }
 .catalog__main-title {
   display: flex;
@@ -68,7 +70,21 @@ export default {
     font-size: 18px;
   }
 }
+@media (max-width: 1522px) {
+  .games__right {
+    width: 760px;
+  }
+  .games__breadcrumbs {
+    width: 1080px;
+  }
+  .games__wrapper {
+    width: 1080px;
+  }
+}
 @media (max-width: 1207px) {
+  .games__breadcrumbs {
+    width: 800px;
+  }
   .games__wrapper {
     width: 800px;
   }
@@ -85,8 +101,11 @@ export default {
   }
 }
 @media (max-width: 1008px) {
+  .games__wrapper {
+    width: 748px;
+  }
   .games__breadcrumbs {
-    width: 100%;
+    width: 90%;
   }
   .games__right {
     width: 100%;
@@ -105,6 +124,15 @@ export default {
     & p {
       font-size: 13px;
     }
+  }
+}
+@media (max-width: 455px) {
+  .games__wrapper {
+    width: 83%;
+    padding: 0;
+  }
+  .games__breadcrumbs {
+    width: 83%;
   }
 }
 </style>

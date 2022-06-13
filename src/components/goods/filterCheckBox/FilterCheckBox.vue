@@ -40,6 +40,7 @@ export default {
   },
 };
 </script>
-<style lang="sss" scoped>
-/* @import "./filterCheckBox.scss"; */
+
+<style lang="scss">
+@import "./filterCheckBox.scss";
 </style>

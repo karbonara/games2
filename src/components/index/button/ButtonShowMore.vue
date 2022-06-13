@@ -9,7 +9,7 @@
   font-weight: 500;
   line-height: normal;
   text-align: center;
-  width: 80%;
+  width: 100%;
   margin: 0;
   border-radius: 6px;
   cursor: pointer;
